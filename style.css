@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  width: 100%;
+  background-color: #f4f5f7;
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav_brand {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 15px 15px 15px;
+}
+
+.left_item{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bold;
+}
+
+.menu_items{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu_items a{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.right_item button{
+    font-size: 1rem;
+    padding: 10px 22px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.container, .hero_bottom{
+    width: 67%;
+    margin-top: 70px;
+  display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left_container{
+  width: 26%;
+}
+
+.left_container .text_box h1{
+  font-size: 3.2rem;
+  margin-bottom: 13px;
+}
+.left_container .text_box p{
+  font-size: .9rem;
+  opacity: .7;
+  margin-bottom: 13px;
+}
+
+.btn_grp{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.btn_grp button{
+  cursor: pointer;
+}
+
+.btn_grp .start_btn{
+  padding: 16px 30px;
+  background-color: #000;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.play_btn{
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  display: grid;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+
+.right_container{
+  width: 74%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+
+}
+
+.img_div{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.circle{
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(to right, transparent 40%, #fff 40%);
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+}
+
+.img_bottle{
+  position: absolute;
+  width: 420px;
+  top: -215px;
+  left: -100px;
+}
+
+.bottle_data{
+  position: absolute;
+  right: 0;
+  list-style: none;
+  width: 30%;
+}
+
+.bottle_data li{
+  padding: 10px 0 15px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #00000044;
+}
+
+.bottle_data li p{
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.bottle_data li small{
+ opacity: .8;
+  
+}
+
+.hero_bottom{
+  padding: 4px;
+  justify-content: space-between;
+  align-items: center;
+}
+.scroll_down{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.scroll_down .scroll_{
+  width: 50px;
+  height: 80px;
+  border: 1px solid #000000bb;
+  border-radius: 40px;
+  position: relative;
+}
+
+.dot{
+  width: 10px;
+  height: 10px;
+  background-color: #000000be;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+}
+
+.scroll_down span{
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.right_hero_bottom{
+  width: 74%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right_hero_bottom p{
+  width: 50%;
+  opacity: .9;
+  font-size: .9rem;
+
+}
+
+.right_hero_bottom button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.right_hero_bottom button span:nth-child(1){
+  font-size: 1.1rem;
+}
+.right_hero_bottom button span:nth-child(2){
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+
+.prealoder{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #f4f5f7;
+  z-index: 999;
+}
+
+.prealoder span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.prealoder .progress{
+  width: 25%;
+  height: 7px;
+  background-color: #000;
+  position: absolute;
+  bottom: 13%;
+  right: 20%;
+}
+
+.progress .line{
+  position: absolute;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #fff;
+  transition-duration: 300ms;
+}
